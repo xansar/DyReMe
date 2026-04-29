@@ -1,0 +1,1 @@
+{% for message in messages %}{% if message['role'] == 'system' %}System：{% endif %}{% if message['role'] == 'user' %}User：{% endif %}{% if message['role'] == 'assistant' %}Assistant：{% endif %}{{ message['content'] }}<|end_of_text|>\n {% endfor %}Assistant：
